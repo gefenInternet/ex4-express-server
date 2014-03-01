@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Testing Documentation</title>
+	</head>
+	
+	<body>
+		<br><b>Test1</b></br>
+		<br>test a normal good request with finished header, and no body</br>
+		
+		<br><b>Test2</b></br>
+		<br>test a request that cannot be parsed</br>
+		<br>As hoad wrote: In case you could not parse the HTTP request, return status 500 and explain (via the body) what went wrong</br>
+		
+		<br><b>Test3</b></br>
+		<br>test a POST request</br>
+		<br>As hoad wrote: In case you got non GET request, return status 405 and explain (via the body) what went wrong</br>
+		
+		<br><b>Test4</b></br>
+		<br>test request for no such file</br>
+		<br>As hoad wrote: In case you can't find the requested resource return status 404 and explain (via the body) what went wrong</br>
+		
+		<br><b>Test5</b></br>
+		<br>test non http request</br>
+		<br>As hoad wrote: if it's not(an HTTP message) you should return an error response.</br>
+		
+		<br><b>Test6</b></br>
+		<br>test http version 1.0 + not keep alive = closed socket</br>
+		<br>As hoad wrote: It means that you should close the connection only if The version of the HTTP request is 1.0 and there is no 'Connection: Keep-Alive' header embedded in that request.</br>
+		
+		<br><b>Test7</b></br>
+		<br>test connection: close in header = socket is closed</br>
+		<br>As hoad wrote: It means that you should close the connection only if The request contains a 'Connection: close' header (you should close the connection only after completion of the response)</br>
+		
+		<br><b>Test8</b></br>
+		<br>test timeout of 2 sec = socket is closed</br>
+		<br>As hoad wrote: It means that you should close the connection only if Timeout (2 seconds since the last data)</br>
+		
+		<br><b>Test9</b></br>
+		<br>test trying to get a file that is not under the root</br>
+		
+		<br><b>Test10</b></br>
+		<br>test 2 request in the same write</br>
+		
+		<br><b>Test11</b></br>
+		<br>test header is not done</br>
+		
+		<br><b>Test12</b></br>
+		<br>test body is not done</br>
+	</body>
+
+</html>

@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<title>
+			GefenNaar - 304799059 - gefenaar
+		</title>
+		<link rel="stylesheet" type="text/css" href="profile.css" />
+		<meta charset="utf-8">
+		<title>jQuery UI Dialog - Default functionality</title>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<link rel="stylesheet" href="/resources/demos/style.css">
+		<script src="picture.js"></script>
+		<script src="signIn.js"></script>
+	</head>
+
+	<body>
+		<form class="header">
+			Password: <input type="password" id="password"></input>
+			Username: <input type="text" id="username"></input>
+			<input id="send" type="button" value="Send" class="send" onClick="signIn('username', 'password')" />
+			<hr></hr>
+		</form>
+		<form id="defaultMainForm">
+			<div>
+				<img class = "profile" id="profile_picture" src="photo.jpg" width="650" height="450"/>
+				<h1 class="name">Gefen, <b>Naar</b></h1>
+				<h1>304799059</h1>
+				Welcome to my personal page..</br>
+				I am on my third year on the combined studies of:</br>
+				first degree on computer science (BSC)</br>
+				and second degree on buisness managment (MBA).</br>
+				In addition I work on Cisco Nds.</br>
+				<table>
+					<tr>
+						<th colspan="2">My Favorit Websites</th>
+					</tr>
+			
+					<tr>
+						<td><a href="www.google.com">Google/Gmail </a></td>
+						<td>Google is currently the best search engine to my opinion. </td>
+					</tr>
+			
+					<tr>
+						<td><a href="www.mako.co.il">Mako </a></td>
+						<td>Mako is a very goos web site (and mobile application) .</td>
+					</tr>
+			
+					<tr>
+						<td><a href="www.facebook.com">Facebook </a></td>
+						<td>I don't know why, it's just fun =)</td>
+					</tr>
+				</table>
+		
+			</div>
+		</form>
+		
+		<div id="dialog" title="Settings">
+			<p>please insert a</p>
+			<p>new default value</p>
+			<p>and press OK</p>
+			<input id='defaultVal' type='text' value='' style='width:30%'/>
+			<input id='ok' type='button' value='OK'/>
+		</div>
+		
+		<form id="footer" class="footer">
+			</br>
+			</br>
+			<hr></hr>
+			<img src="Humor.jpg"/>
+		</form>
+		
+		<form id="calculatorForm" class="calculatorForm">
+			<textarea id="result" rows="1" cols="10" disabled >0</textarea>	
+			<div>
+				<input id="clear" type="button" value="CLEAR"/>
+				<input id="plus" type="button" value="+"/>
+				<input id="mult" type="button" value="*"/>
+				<input id="settings" type="button" value="SETTINGS"/>
+			</div>
+			<input id="input" type="text" value=""></input>
+
+			<script src="calculator.js"></script>
+		</form>
+	</body>
+</html>

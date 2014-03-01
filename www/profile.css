@@ -1,0 +1,58 @@
+body {
+	background-color: pink;
+	font-size: 1.5em;
+}
+
+.header {
+	text-align: right;
+	font-weight: bold;
+}
+
+.footer {
+	text-align: center;
+}
+
+.calculatorForm {
+	display: none;
+	text-align: center;
+}
+
+hr {
+	border-color: purple;
+}
+
+h1 {
+	text-decoration: underline;
+}
+
+.name {
+	font-weight: normal;
+}
+
+input[type="button"] {
+	color: white;
+	background-color: purple;
+	border-style: outset;
+	border-color: white;
+	font-size: 1em;
+}
+
+table {
+	border-color: purple;
+	border-style: outset;
+	font-size: 0.8em;
+}
+
+td {
+	border:1px solid purple;
+}
+
+th {
+	border:1px solid purple;
+	background-color:purple;
+	color:white;
+}
+
+.profile {
+	float: right;
+}

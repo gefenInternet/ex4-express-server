@@ -1,0 +1,17 @@
+var inputId = "input";
+var resultId = "result";
+var settingsId = "settings";
+var plusId = "plus";
+var multId = "mult";
+
+$("#" + plusId).click(function() {
+	var addMethod = calc.add;
+	var newValue = addMethod(getInputVal());
+	setResult(newValue);
+});
+
+
+the first lines happens first. and then when a click happens,
+the click function is called.
+it's not called right after the first lines, but wait for
+the event to happen.
